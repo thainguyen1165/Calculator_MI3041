@@ -29,4 +29,4 @@ def index():
 if __name__ == '__main__':
     # Chạy ứng dụng ở chế độ debug
     # Trong môi trường production, hãy sử dụng một WSGI server như Gunicorn
-    app.run(debug=True, port=5001)
+    app.run(host="127.0.0.1", debug=False, port=5001, use_reloader=False)
